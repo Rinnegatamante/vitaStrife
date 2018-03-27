@@ -1902,7 +1902,7 @@ static void LoadDefaultCollection(default_collection_t *collection)
     // read the file in, overriding any set defaults
 	char flname[256];
 	sprintf(flname, "ux0:/data/vitaStrife/%s", collection->filename);
-    f = fopen(collection->filename, "r");
+    f = fopen(flname, "r");
 
     if (f == NULL)
     {
